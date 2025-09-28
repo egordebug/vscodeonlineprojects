@@ -10,13 +10,23 @@
         <table>
             <tr>
                 <td>
-                    My firstcss project
+                    Нажми на кнопку ниже
                 </td>
             </tr>
         </table>
+        <br>
         <button onclick="alertmessage()">
             нажми меня
         </button>
+        <br>
+        <hr>
+        <br>
+        <h1>ЧИТАЮ ТВОИ МЫСЛИ ВВЕДИ ИХ НИЖЕ</h1>
+        <br>
+        <input type="text" id="misli" placeholder="МЫСЛИ">
+        <br>
+        <button onclick="mislichitator()">ПОДТВЕРДИТЬ</button>
+        <br>
     </body>
 </html>
 
@@ -43,10 +53,17 @@
         background-color: #fff;
         color: #000; 
     }
+    input {
+        padding: 10px;
+        font-size: 16px;
+    }
 </style>
 
 <script>
     function alertmessage() {
         alert("ИДИ НАХУЙ!!!!")
+    }
+    function mislichitator() {
+        alert("ИДИ НАХУЙ, " + misli + "!!!!!!!!!!!!")
     }
 </script>
