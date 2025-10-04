@@ -6,10 +6,12 @@
   <title>тест</title>
 </head>
 <body>
-  <button onclick="btn1()">button</button>
-  <p>Hello, World!</p>
+  <p class="center"> best cheat for standoff </p>
+  <button class="center"> Download </button>
+</body>
+</html>
+<style>
 
-  <style>
     body {
       background-color: #111;
       color: #fff;
@@ -24,6 +26,7 @@
     }
 
     button {
+      position: absolute;
       background-color: #333;
       color: #fff;
       border: 1px solid #444;
@@ -42,6 +45,58 @@
       background-color: #444;
       transform: translateY(0);
     }
+
+    .top-center {
+      top: 5%;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    .top-left {
+      top: 5%;
+      left: 5%;
+    }
+
+    .top-right {
+      top: 5%;
+      right: 5%;
+    }
+
+    .bottom-center {
+      bottom: 5%;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    .bottom-left {
+      bottom: 5%;
+      left: 5%;
+    }
+
+    .bottom-right {
+      bottom: 5%;
+      right: 5%;
+    }
+
+    .middle-left {
+      top: 50%;
+      left: 5%;
+      transform: translateY(-50%);
+    }
+
+    .middle-right {
+      top: 50%;
+      right: 5%;
+      transform: translateY(-50%);
+    }
+
+    .center {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
   </style>
 
   <script>
@@ -49,5 +104,3 @@
       alert("test");
     }
   </script>
-</body>
-</html>
