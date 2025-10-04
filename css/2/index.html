@@ -1,110 +1,60 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>тест</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>тест</title>
+<style>
+body {
+  background-color: #111;
+  color: #fff;
+  font-family: monospace;
+  margin: 0;
+  padding: 20px;
+}
+
+p.top-center {
+  position: absolute;
+  top: 5%;
+  left: 50%;
+  transform: translateX(-50%);
+  margin: 0;
+  padding: 20px;
+}
+
+button.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #333;
+  color: #fff;
+  border: 1px solid #444;
+  padding: 10px 20px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.2s, transform 0.1s;
+}
+
+button.center:hover {
+  background-color: #333;
+  transform: translate(-50%, -52%);
+}
+
+button.center:active {
+  background-color: #444;
+  transform: translate(-50%, -50%);
+}
+</style>
 </head>
 <body>
-  <p> best cheat for standoff </p>
-  <button class="center"> Download </button>
+<p class="top-center">best cheat for standoff</p>
+<button class="center" onclick="btn1()">Download</button>
+
+<script>
+function btn1() {
+  alert("test");
+}
+</script>
 </body>
 </html>
-<style>
-
-    body {
-      background-color: #111;
-      color: #fff;
-      font-family: monospace;
-      margin: 0;
-      padding: 20px;
-    }
-
-    p {
-      position: absolute;
-      top: 5%;
-      left: 50%;
-      transform: translateX(-50%);
-      margin: 0;
-      padding: 20px;
-    }
-
-    button {
-      position: absolute;
-      background-color: #333;
-      color: #fff;
-      border: 1px solid #444;
-      padding: 10px 20px;
-      border-radius: 6px;
-      cursor: pointer;
-      transition: background 0.2s, transform 0.1s;
-    }
-
-    button:hover {
-      background-color: #333;
-      transform: translateY(-2px);
-    }
-
-    button:active {
-      background-color: #444;
-      transform: translateY(0);
-    }
-
-    .top-center {
-      top: 5%;
-      left: 50%;
-      transform: translateX(-50%);
-    }
-
-    .top-left {
-      top: 5%;
-      left: 5%;
-    }
-
-    .top-right {
-      top: 5%;
-      right: 5%;
-    }
-
-    .bottom-center {
-      bottom: 5%;
-      left: 50%;
-      transform: translateX(-50%);
-    }
-
-    .bottom-left {
-      bottom: 5%;
-      left: 5%;
-    }
-
-    .bottom-right {
-      bottom: 5%;
-      right: 5%;
-    }
-
-    .middle-left {
-      top: 50%;
-      left: 5%;
-      transform: translateY(-50%);
-    }
-
-    .middle-right {
-      top: 50%;
-      right: 5%;
-      transform: translateY(-50%);
-    }
-
-    .center {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-    }
-
-  </style>
-
-  <script>
-    function btn1() {
-      alert("test");
-    }
-  </script>
